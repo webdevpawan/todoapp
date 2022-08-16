@@ -116,3 +116,9 @@ ul#list-items {
   gap: 1rem;
   flex-wrap: wrap;
 }
+
+@media(max-widh:375px){
+     input{
+        width: 60%;
+    }
+}
