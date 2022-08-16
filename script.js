@@ -10,7 +10,9 @@ function display() {
     listItems.innerHTML = "";
     for (let i = 0; i < localStorage.length; i++) {
         let task = localStorage.getItem(i);
-        listItems.insertAdjacentHTML("afterbegin", `<li data-key="${i}"><i class="fa fa-check task-complete"></i> <span class="todo">${task}</span><i class="fa fa-pencil editTask"></i> <i class="fa fa-times removeBtn"></i></li>`);
+        if (task != null) {
+            listItems.insertAdjacentHTML("afterbegin", `<li data-key="${i}"><i class="fa fa-check task-complete"></i> <span class="todo">${task}</span><i class="fa fa-pencil editTask"></i> <i class="fa fa-times removeBtn"></i></li>`);
+        }
     }
 }
 display();
