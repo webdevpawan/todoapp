@@ -35,7 +35,7 @@ body{
 }
 
 .btn {
-  width: 6rem;
+/*   width: 6rem; */
   padding: 1.1rem;
   background-color: purple;
   color: #fff;
